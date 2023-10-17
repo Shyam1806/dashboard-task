@@ -1,0 +1,514 @@
+<!DocType html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css" />
+
+</head>
+
+<body>
+    <!-- leftpanel starts -->
+    <div class=""></div>
+    <!-- leftpanel ends -->
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed">
+        <!-- Sidebar Start -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div>
+                <div class="brand-logo d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="text-nowrap logo-img">
+                        <img src="./img/Test-Logo.svg" width="100" alt="dashboard-logo" />
+                    </a>
+                    <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                        <img src="./img/close1.png" alt="close-icon" style="width: 25px; height:25px" />
+                    </div>
+                </div>
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item">
+                            <a class="sidebar-link active" href="#" aria-expanded="false">
+                                <span>
+                                    <img src="./img/Dashboard.svg" alt="dashboard-icon" />
+                                </span>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="#" aria-expanded="false">
+                                <span>
+                                    <img src="./img/Orders.svg" alt="Orders-icon" />
+                                </span>
+                                <span class="hide-menu">Orders</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="#" aria-expanded="false">
+                                <span>
+                                    <img src="./img/Products.svg" alt="Products-icon" />
+                                </span>
+                                <span class="hide-menu">Products</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="#" aria-expanded="false">
+                                <span>
+                                    <img src="./img/Customer.svg" alt="Customer-icon" />
+                                </span>
+                                <span class="hide-menu">Customer</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="#" aria-expanded="false">
+                                <span>
+                                    <img src="./img/Message.svg" alt="Message-icons" />
+                                </span>
+                                <span class="hide-menu">Message</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="#" aria-expanded="false">
+                                <span>
+                                    <img src="./img/Setting.svg" alt="Settings-icon" />
+                                </span>
+                                <span class="hide-menu">Settings</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!--  Sidebar End -->
+        <!--  Main wrapper -->
+        <div class="body-wrapper">
+            <!--  Header Start -->
+            <header class="app-header">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item d-block d-xl-none">
+           <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+             Dashboard
+           </a>
+         </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                                <img class="d-xl-none d-block sidebartoggler menu-icon" src="./img/menu.png"
+                                    alt="menu" />
+                                <h5 class="dashboard-header-title d-lg-block d-md-none d-sm-none ">Dashboard</h5>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+                        <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+                            <a href="#" class="email-icon-parent">
+                                <img src="./img/Mail.svg" alt="email-icon" />
+                            </a>
+                            <a href="#" class="email-icon-parent">
+                                <img src="./img/Notification.svg" alt="notification-icon" />
+                            </a>
+                            <a href="#" class="user-icon-parent" target="_blank">
+                                <img src="./img/User.png" alt="User-icon" />
+                                John Doe
+                            </a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./img/Drop-Down.svg" alt="dropdown" width="14" height="14" class="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up"
+                                    aria-labelledby="drop2">
+                                    <div class="message-body">
+                                        <a href="javascript:void(0)"
+                                            class="d-flex align-items-center gap-2 dropdown-item">
+                                            <p class="mb-0 fs-3">My Profile</p>
+                                        </a>
+                                        <a href="javascript:void(0)"
+                                            class="d-flex align-items-center gap-2 dropdown-item">
+                                            <p class="mb-0 fs-3">My Account</p>
+                                        </a>
+                                        <a href="javascript:void(0)"
+                                            class="d-flex align-items-center gap-2 dropdown-item">
+                                            <p class="mb-0 fs-3">My Task</p>
+                                        </a>
+                                        <a href="#" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!--  Header End -->
+            <div class="container-full pt-4 pb-4 overall-dashboard-parent">
+                <h4>Overview</h4>
+                <!--  Row 1 -->
+                <div class="row pt-4 pb-4">
+                    <div class="col-lg-3 d-flex align-items-strech col-md-6 col-sm-12 overview-child1">
+                        <div class="card w-100">
+                            <div class="card-body">
+                                <div
+                                    class="d-sm-flex d-block align-items-center justify-content-between mb-9 flex-wrap">
+                                    <div
+                                        class="mb-3 mb-sm-0 d-flex flex-nowrap overview-card1 w-100 justify-content-between">
+                                        <a href="#" class="d-flex flex-nowrap">
+                                            <img src="./img/TotalCustomer-Orange.png" alt="customer-icon"
+                                                class="customer-icon1" />
+                                            <!-- <img src="./img/Customer.svg" alt="customer-icon" /> -->
+                                            <h6 class="card-title fw-semibold">Total Customer Visit</h6>
+                                        </a>
+                                        <h5>721,345</h5>
+                                    </div>
+                                    <div id="customervisit"></div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-strech col-md-6 col-sm-12 overview-child1">
+                        <div class="card w-100">
+                            <div class="card-body">
+                                <div
+                                    class="d-sm-flex d-block align-items-center justify-content-between mb-9 flex-wrap">
+                                    <div class="mb-3 mb-sm-0 d-flex overview-card1 w-100 justify-content-between">
+                                        <a href="#" class="d-flex flex-nowrap">
+                                            <img src="./img/TotalOrders-Violet.png" alt="Order-icon"
+                                                class="customer-icon1" />
+                                            <h6 class="card-title fw-semibold">Total Orders</h6>
+                                        </a>
+                                        <h5>23,482</h5>
+                                    </div>
+                                    <div id="totalorders"></div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-strech col-md-6 col-sm-12 overview-child1">
+                        <div class="card w-100">
+                            <div class="card-body">
+                                <div
+                                    class="d-sm-flex d-block align-items-center justify-content-between mb-9 flex-wrap">
+                                    <div class="mb-3 mb-sm-0 d-flex overview-card1 w-100 justify-content-between">
+                                        <a href="#" class="d-flex flex-nowrap">
+                                            <img src="./img/TotalPending-Sky.png" alt="Pending-icon"
+                                                class="customer-icon1" />
+                                            <h6 class="card-title fw-semibold">Total Pending</h6>
+                                        </a>
+                                        <h5>4,440</h5>
+                                    </div>
+                                    <div id="totalpending"></div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-strech col-md-6 col-sm-12 overview-child1">
+                        <div class="card w-100">
+                            <div class="card-body">
+                                <div
+                                    class="d-sm-flex d-block align-items-center justify-content-between mb-9 flex-wrap">
+                                    <div class="mb-3 mb-sm-0 d-flex overview-card1 w-100 justify-content-between">
+                                        <a href="#" class="d-flex flex-nowrap">
+                                            <img src="./img/Total Delivered-pink.png" alt="Delivered-icon"
+                                                class="customer-icon1" />
+                                            <h6 class="card-title fw-semibold">Total Delivered</h6>
+                                        </a>
+                                        <h5>19,442</h5>
+                                    </div>
+                                    <div id="totaldelivered"></div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- customervisit Starts -->
+
+                <!-- customerVisit End -->
+                <!-- targets Starts  -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 d-flex align-items-strech col-md-6 col-sm-12 overview-child1">
+                        <div class="card w-100">
+                            <div class="card-body">
+                                <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
+                                    <div class="mb-3 mb-sm-0">
+
+                                        <h5 class="card-title fw-semibold">Total Target Achieved</h5>
+                                    </div>
+                                    <div class="form-select-parent">
+                                        <select class="form-select">
+                                            <option value="1">Day</option>
+                                            <option value="2">Week</option>
+                                            <option value="3">Month</option>
+                                            <option value="4">Year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="totaltarget"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-strech col-md-6 col-sm-12 overview-child1">
+                        <div class="card w-100">
+                            <div class="card-body">
+                                <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
+                                    <div class="mb-3 mb-sm-0">
+                                        <h5 class="card-title fw-semibold">Total Earnings</h5>
+                                    </div>
+                                    <div class="form-select-parent">
+                                        <select class="form-select">
+                                            <option value="1">Day</option>
+                                            <option value="2">Week</option>
+                                            <option value="3">Month</option>
+                                            <option value="4">Year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="piechart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-strech col-md-6 col-sm-12 overview-child1">
+                        <div class="card w-100">
+                            <div class="card-body">
+                                <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
+                                    <div class="mb-3 mb-sm-0">
+                                        <h5 class="card-title fw-semibold">Total Profit & Lost</h5>
+                                    </div>
+                                    <div class="form-select-parent">
+                                        <select class="form-select">
+                                            <option value="1">March 2023</option>
+                                            <option value="2">April 2023</option>
+                                            <option value="3">May 2023</option>
+                                            <option value="4">June 2023</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="profitchart"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- targets end -->
+                <div class="row">
+                    <div class="customer-details-title d-flex justify-content-between">
+
+                        <h5 class="card-title fw-semibold mb-4 d-flex justify-content-between">Customer Order Details
+                        </h5>
+                        <div class="year-parent">
+                            <a href="#">Year</a>
+                            <a href="#">Month</a>
+                            <a href="#">Week</a>
+                            <a href="#">Day</a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 d-flex align-items-stretch col-md-12 col-sm-12">
+                        <div class=" w-100">
+                            <div class="card-body p-4">
+                                <div class="table-responsive">
+                                    <table class="table text-nowrap mb-0 align-middle">
+                                        <thead class="text-dark fs-4 table-head">
+                                            <tr>
+                                                <th class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-0">Order No</h6>
+                                                </th>
+                                                <th class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-0">Customer name</h6>
+                                                </th>
+                                                <th class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-0">Address</h6>
+                                                </th>
+                                                <th class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-0">Date</h6>
+                                                </th>
+                                                <th class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-0">Payment Type</h6>
+                                                </th>
+                                                <th class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-0">Payment Status</h6>
+                                                </th>
+                                                <th class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-0">Delivery Status</h6>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-0">#246354</h6>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-1">Ingredia Nutrisha</h6>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <p class="mb-0 fw-normal">4963 White Oak Drive Kansos City, MO</p>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <p class="mb-0 fw-normal">20 Nov 2021</p>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-1">Paytm</h6>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <span class="badge bg-success rounded-1 fw-semibold">Paid</span>
+                                                    </div>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <span class="badge  rounded-1 fw-semibold Processing sucessbtn">Done</span>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-0">#246354</h6>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-1">Valenteno Morose</h6>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <p class="mb-0 fw-normal">4963 White Oak Drive Kansos City, MO</p>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <p class="mb-0 fw-normal">20 Nov 2021</p>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-1">Google Pay</h6>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <span class="badge bg-success rounded-1 fw-semibold">Paid</span>
+                                                    </div>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <span class="badge rounded-1 fw-semibold sucessbtn">Done</span>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-0">#246354</h6>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-1">Abraham Pigeon</h6>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <p class="mb-0 fw-normal">4963 White Oak Drive Kansos City, MO</p>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <p class="mb-0 fw-normal">20 Nov 2021</p>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-1">Phonepe</h6>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <span
+                                                            class="badge bg-warning rounded-1 fw-semibold">Processing</span>
+                                                    </div>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <span class="badge processbtn rounded-1 fw-semibold">Processing</span>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-0">#246354</h6>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-1">Quiche hallio</h6>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <p class="mb-0 fw-normal">4963 White Oak Drive Kansos City, MO</p>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <p class="mb-0 fw-normal">20 Nov 2021</p>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <h6 class="fw-semibold mb-1">Cash on Delivery</h6>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <span
+                                                            class="badge bg-danger rounded-1 fw-semibold">Failed</span>
+                                                    </div>
+                                                </td>
+                                                <td class="border-bottom-0">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <span
+                                                            class="badge btn-primary rounded-1 fw-semibold failbtn">Failed</span>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                </div>
+                            </div>
+                            <div class="pagination-parent d-flex flex-wrap justify-content-between align-items-center">
+                                <h6>Showing 1 to 10 of 100 entries</h3>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item"><a class="page-links prev-links" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link page-link1" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                        <li class="page-item"><a class="page-links next-links" href="#">Next</a></li>
+
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="./jquery/jquery.min.js"></script>
+    <script src="./jquery/bootstrap.bundle.min.js"></script>
+    <script src="./jquery/apexcharts.js"></script>
+    <script src="./jquery/simplebar.js"></script>
+    <script src="./js/chartcustomized.js"></script>
+    <script src="./js/sidebar.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+
+/* responsive  */
+@media screen and (max-width:1080px) and (min-width:980px) {}
+
+@media screen and (max-width:980px) and (min-width:768px) {
+  
+}
+
+@media screen and (max-width:767px) and (min-width:520px) {
+ .pagination-parent{
+    justify-content: center !important;
+ }
+}
+
+@media screen and (max-width:520px) and (min-width:320px) {
+    .dashboard-header-title {
+        margin-left: 22px;
+        display: none !important;
+    }
+    .year-parent{
+        display: none;
+    }
+    .pagination{
+        display: none;
+    }
+   
+    .email-icon-parent{
+        display: none;
+    }
+    .navbar-collapse{
+        margin-right:16px;
+    }
+    .pagination-parent{
+        justify-content: center !important;
+     }
+}
+@media screen and (max-width:1080px) and (min-width:320px) {
+    #main-wrapper[data-layout="vertical"][data-sidebartype="full"] .left-sidebar,
+    #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"] .left-sidebar {
+        left: -270px;
+        z-index: 9999;
+
+    }
+    #main-wrapper[data-layout="vertical"][data-sidebartype="full"].show-sidebar .left-sidebar,
+    #main-wrapper[data-layout="vertical"][data-sidebartype="mini-sidebar"].show-sidebar .left-sidebar {
+        left: 0;
+        
+    }
+    .menu-icon{
+        margin-left:20px;
+    }
+    .body-wrapper {
+        margin-left: 0px !important;
+    }
+
+    .app-header {
+        width: 100% !important;
+    }
+
+    /* .left-sidebar {
+        display: none;
+    } */
+
+    .overview-child1 {
+        margin: 10px 0px;
+    }
+    .dropdown-menu{
+        position: absolute !important;
+        top: 65px !important;
+    }
+}

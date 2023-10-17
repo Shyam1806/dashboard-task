@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1D396B;
+}
+
+.left-sidebar {
+    width: 270px;
+    color: #fff;
+    background-color: #242C46;
+    position: absolute;
+    -webkit-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+    height: 100%;
+    z-index: 11;
+    border-right: 1px solid rgb(229, 234, 239);
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+ul>li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    padding: 40px 0px;
+}
+
+.left-sidebar .scroll-sidebar {
+    overflow-y: auto;
+    padding: 0 24px;
+    /* height: calc(100vh - 80px); */
+    border-radius: 7px;
+}
+
+.left-sidebar .scroll-sidebar .simplebar-track.simplebar-horizontal {
+    visibility: hidden !important;
+}
+
+.sidebar-nav ul .sidebar-item.selected>.sidebar-link,
+.sidebar-nav ul .sidebar-item.selected>.sidebar-link.active,
+.sidebar-nav ul .sidebar-item>.sidebar-link.active {
+
+    background-color: #3A3543;
+}
+
+.sidebar-nav ul .sidebar-item .sidebar-link:hover {
+    background-color: #3A3543;
+    color: #5d87ff;
+}
+
+.body-wrapper {
+    position: relative;
+}
+
+.body-wrapper>.container-fluid,
+.body-wrapper>.container-lg,
+.body-wrapper>.container-md,
+.body-wrapper>.container-sm,
+.body-wrapper>.container-xl,
+.body-wrapper>.container-xxl {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    -webkit-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    --bs-gutter-x: 24px;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.app-header {
+    width: 100%;
+    box-shadow: -2px 2px 12px 0px rgb(0 0 0 / 33%);
+}
+
+.dropdown-menu {
+    background-color: #fff;
+}
+
+.table-head>tr>th>h6 {
+    color: #D0DBE3;
+    font-size: 15px;
+}
+
+tbody>tr>td>h6,
+tbody>tr>td>p {
+    color: #415882;
+    font-weight: 600 !important;
+}
+
+.sidebar-nav ul .sidebar-item .sidebar-link {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 25px;
+    position: relative;
+    margin: 0px 0px 2px;
+    padding: 10px;
+    border-radius: 7px;
+    gap: 15px;
+    font-weight: 400;
+}
+
+.app-header .navbar {
+    min-height: 70px;
+    padding: 0;
+}
+
+#main-wrapper[data-layout="vertical"][data-header-position="fixed"] .app-header {
+    width: calc(100% - 270px);
+}
+
+#main-wrapper[data-layout="vertical"][data-sidebartype="full"] .body-wrapper {
+    margin-left: 270px;
+}
+
+.navbar-expand-lg {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+#main-wrapper[data-layout="vertical"][data-sidebar-position="fixed"] .left-sidebar {
+    position: fixed;
+    top: 0;
+}
+
+#main-wrapper[data-layout="vertical"][data-header-position="fixed"] .app-header {
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.card {
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+}
+
+.overview-card1>h5 {
+    font-size: 14px;
+    font-weight: 700 !important;
+}
+
+.overview-card1>h6 {
+    font-size: 15px;
+    font-weight: 700 !important;
+}
+
+.card-body {
+    padding: 10px !important;
+}
+
+.email-icon-parent {
+    margin-right: 10px;
+    background-color: #fef0e5;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.email-icon-parent>img {
+    margin: 4px 1px 0px 0px;
+}
+
+.user-icon-parent {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-icon-parent>img {
+    margin: 0px 4px 0px 0px;
+}
+
+.overall-dashboard-parent {
+    padding: 24px;
+    background-color: #FEFEFE;
+}
+
+.overall-dashboard-parent>h4 {
+    margin: 70px 0px 0px 0px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card-title {
+    font-size: 13px;
+    color: #1D396B;
+}
+
+.customer-icon1 {
+    width: 20px;
+    height: 20px;
+    margin: 0px 0px 0px 2px;
+}
+
+.form-select-parent {
+    width: 32%;
+}
+
+.form-select {
+    border: inherit;
+}
+
+.form-select:focus,
+.form-select:focus-visible {
+    outline: none !important;
+}
+
+table>tbody>tr:nth-child(even) {
+    box-shadow: 0px 8px 30px #E2E9F580;
+}
+
+table>tbody>tr>td>h6 {
+    font-size: 14px;
+}
+
+.message-body>a>p {
+    font-size: 16px !important;
+}
+
+.year-parent>a {
+    color: #B0BAC5;
+    margin: 0px 8px 0px 0px;
+    font-size: 14px;
+}
+
+.year-parent>a:nth-child(4) {
+    color: #2D3039 !important;
+    margin: 0px 0px !important;
+}
+
+.sidebar-link>span>img {
+    width: 30px;
+    height: 30px;
+}
+
+.dashboard-header-title {
+    margin-left: 16px;
+}
+
+.brand-logo {
+    margin: 18px 48px;
+}
+
+.sidebar-item {
+    margin: 10px 0px;
+}
+
+.customer-details-title>h5 {
+    font-size: 18px !important;
+}
+
+.pagination-parent {
+    margin: 20px 0px;
+}
+
+.pagination-parent>h6 {
+    color: #061624;
+    opacity: 0.6;
+    font-size: 16px;
+}
+
+.page-link {
+    border-radius: 7px !important;
+    margin: 0px 10px;
+    color: #000;
+    width: 33px !important;
+    height: 33px !important;
+    border: 1px solid #F5832B;
+}
+
+.page-link1 {
+    margin: 0px 10px;
+    width: 33px !important;
+    height: 33px !important;
+    background: #F5832B !important;
+    color: #fff !important;
+}
+
+.prev-links,
+.next-links {
+    margin: 3px 10px;
+    display: block;
+    color: #061624;
+}
+
+.failbtn {
+    background-color: #E9655957;
+    border: 1px solid #E96559;
+    color: #E96559;
+}
+
+.sucessbtn {
+    background-color: #3BDD9D57;
+    color: #3BDD9D;
+    border: 1px solid #3BDD9D;
+}
+.processbtn{
+    color:#F6AC41;
+    border:1px solid #F6AC41;
+    background-color:#F6AC4157;
+}
